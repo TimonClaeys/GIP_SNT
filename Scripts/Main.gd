@@ -1,10 +1,11 @@
 extends Node
 
-
+var time = 0
+var stopped = false
 
 func _on_Finish_body_entered(body):
-	$CanvasLayer/Control.visible = true
+	$CanvasLayer/Eindscherm.visible = true
 
 
 func _on_Finish_body_exited(body):
-	$CanvasLayer/Control.visible = false
+	$CanvasLayer/Eindscherm.visible = false
